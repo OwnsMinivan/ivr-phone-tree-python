@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ElementTree
 
+#changed to .base for python3
 from .base import BaseTestCase
 from flask import url_for
 

@@ -25,6 +25,7 @@ def menu():
     option_actions = {'1': _give_instructions,
                       '2': _list_planets}
 
+    #needed to change for python3
     if selected_option in option_actions:
         response = VoiceResponse()
         option_actions[selected_option](response)
@@ -40,6 +41,7 @@ def planets():
                       '3': "+12027336386",
                       "4": "+12027336637"}
 
+    #needed to change for python3
     if selected_option in option_actions:
         response = VoiceResponse()
         response.dial(option_actions[selected_option])
