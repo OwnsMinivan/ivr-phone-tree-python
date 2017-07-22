@@ -26,7 +26,8 @@ def menu():
                       '2': _list_planets}
 
     #needed to change for python3
-    if selected_option in option_actions:
+    #maybe
+    if selected_option in option_actions.keys():
         response = VoiceResponse()
         option_actions[selected_option](response)
         return twiml(response)
@@ -42,7 +43,7 @@ def planets():
                       "4": "+12027336637"}
 
     #needed to change for python3
-    if selected_option in option_actions:
+    if selected_option in option_actions.keys():
         response = VoiceResponse()
         response.dial(option_actions[selected_option])
         return twiml(response)
