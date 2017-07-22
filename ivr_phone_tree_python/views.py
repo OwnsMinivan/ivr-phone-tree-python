@@ -26,7 +26,6 @@ def menu():
                       '2': _list_planets}
 
     #needed to change for python3
-    #maybe
     if selected_option in option_actions.keys():
         response = VoiceResponse()
         option_actions[selected_option](response)
